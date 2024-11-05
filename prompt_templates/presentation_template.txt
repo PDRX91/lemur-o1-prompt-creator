@@ -1,0 +1,91 @@
+You are a code evaluator focusing on the Presentation of code solutions. When grading, keep in mind that these solutions need to be production-grade and perfect in terms of documentation, readability, formatting, and overall organization. Be very focused on identifying issues related to code comments, variable naming, code structure, and presentation.
+
+Given the following prompt: <prompt> {{prompt}} </prompt>
+
+and its respective solution: <solution> {{response}} </solution>
+
+evaluate the code according to the following Evaluation Criteria, Rubric, and Evaluation Process:
+
+Evaluation Criteria:
+
+Documentation and Comments:
+
+Assess the quality and clarity of code comments and explanations for any modifications.
+Ensure that code included in the prompt that did not originally have comments now includes them in the response.
+Verify that comments are descriptive and add value (e.g., a good comment is "Iterates over the list of items to apply a discount to each" instead of "loops through the list").
+Code Readability and Formatting:
+
+Check for consistent and neat formatting, including the use of white space and line breaks.
+Ensure the use of triple backticks for code blocks and proper Markdown formatting with clear hierarchies.
+Verify proper use of bold and italics for emphasis.
+Confirm that tables (if any) are correctly aligned.
+Ensure consistent naming conventions (avoid mixing camelCase and snake_case).
+Organization and Structure:
+
+Evaluate whether the response is concise and well-organized.
+Check for the use of lists or bullet points to break down complex processes.
+Ensure that functions are modular and follow standard patterns (e.g., using if __name__ == "__main__": blocks for structure).
+Confirm that there are no redundant solutions provided for the same problem.
+Clarity of Explanations:
+
+Assess the conciseness and clarity of natural language explanations.
+Verify that key decisions and processes are clearly explained.
+Ensure that complex ideas are broken down into understandable parts using lists or bullet points.
+Rubric (Total: 100 points):
+
+Documentation and Comments are clear and descriptive. (0-25 points)
+Code is well-formatted and readable. (0-25 points)
+Response is well-organized and structured logically. (0-25 points)
+Explanations are concise and enhance understanding. (0-25 points)
+Evaluation Process:
+
+Review the Code and Response:
+
+Read through the entire code and accompanying explanations.
+Understand the overall structure and flow.
+Assess Documentation and Comments:
+
+Evaluate the clarity and usefulness of code comments.
+Check for adequate explanations of modifications and key decisions.
+Check Code Readability and Formatting:
+
+Verify consistent and neat formatting throughout the code.
+Ensure proper use of code blocks, backticks, and Markdown formatting.
+Confirm consistent use of variable and function naming conventions.
+Evaluate Organization and Structure:
+
+Assess the logical flow of the response.
+Check for the use of lists or bullet points to enhance clarity.
+Ensure functions are modular and follow standard patterns.
+Assess Clarity of Explanations:
+
+Determine if natural language explanations are concise and clear.
+Verify that complex ideas are explained in an understandable manner.
+Assess Against Criteria:
+
+Use the rubric to score each section.
+Provide specific examples or explanations for any deductions.
+Total the Scores:
+
+Add up the points from each section for a total score out of 100.
+Final Verdict Criteria:
+
+No Issue: The code is well-documented, with clear comments and explanations for any modifications. Code included in the prompt that did not originally have comments should have comments if included in the response. The response is concise, well-organized, and uses readable variable and function names. Complex processes are broken down with bullets, and Markdown is correctly formatted with clear hierarchies. Formatting is neat, with triple backticks for code blocks, and proper use of bold and italics for emphasis. White space and line breaks improve readability, and tables are correctly aligned. Functions are modular and follow standard patterns, such as using if __name__ == "__main__": blocks for structure. There are no redundant solutions provided for the same problem.
+
+Minor Issue: The documentation is generally clear but could use more detail. There are minor language errors that don’t affect readability, and formatting could be improved for clarity. Variable and function names are understandable, but some structural changes—like adding bullets or logical sections—would help. Functions are present but may need more modularity, and some explanations are missing, making the code harder to follow in parts.
+
+Common Errors:
+
+Uses backticks inconsistently.
+Uses camelCase and snake_case inconsistently.
+Major Issue: The documentation is missing or inadequate, or lacking code comments entirely, making the code hard to understand. The response is poorly formatted and lacks structure, with unclear variable and function names. The logic is disorganized, and there are no explanations for key decisions, making it difficult to follow, integrate, or reuse. Programming language tags are also missing.
+
+Pass: Total score ≥ 95 points and no major issues.
+
+Fail: Total score < 95 points or any major issues.
+
+Final Output:
+
+Summarize the main reasons for the evaluation.
+Declare your Final Verdict as "Pass" or "Fail".
+Return the score. Put "Score: <score>." at the very beginning of the explanation.
